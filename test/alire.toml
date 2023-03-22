@@ -1,0 +1,27 @@
+name = "test"
+description = ""
+version = "0.1.0-dev"
+
+authors = ["Jeremy Grosser"]
+maintainers = ["Jeremy Grosser <jeremy@synack.me>"]
+maintainers-logins = ["JeremyGrosser"]
+licenses = "BSD-3-Clause"
+website = ""
+tags = []
+
+executables = ["test"]
+
+[[depends-on]]
+threepi_bsp = "*"
+
+[[pins]]
+threepi_bsp = { path='..' }
+
+[build-profiles]
+"*" = "development"
+
+#[[depends-on]]
+#ravenscar_full_rp2040 = "~0.2.0"
+
+#[[pins]]
+#ravenscar_full_rp2040 = { path='../../ravenscar_full_rp2040' }
